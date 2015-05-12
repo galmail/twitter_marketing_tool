@@ -7,11 +7,15 @@ This tool allows anyone to use twitter's powerful API to tweet followers on any 
 
 ## Installation ##
 
-  git clone https://github.com/galmail/twitter_marketing_bot
-  cd twitter_marketing_bot
-  npm install
-  npm install supervisor -g
-  supervisor server.js
+In the terminal run the following commands:
+
+```
+git clone https://github.com/galmail/twitter_marketing_bot
+cd twitter_marketing_bot
+npm install
+npm install supervisor -g
+supervisor server.js
+```
 
 ## Quick Start ##
 

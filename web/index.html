@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Twitter Marketing Tool</title>
+		<script src="angular.js"></script>
+		<script src="mainCtrl.js"></script>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<h1>Twitter Marketing Tool</h1>
+
+		<div ng-app="myApp" ng-controller="mainCtrl">
+			<div class="line">
+				<label>TW_KEY:</label>
+				<input ng-model="twitter_credentials.key" type="text" class="basic-input"></input>
+			</div>
+			<div class="line">
+				<label>TW_SECRET:</label>
+				<input ng-model="twitter_credentials.secret" type="text" class="basic-input"></input>
+			</div>
+			
+			<button ng-click="login()">Login</button>
+
+			<div class="line">
+				<label>Fans of Twitter Account @</label>
+				<input ng-model="twitter_marketing_data.account" id="tw_account" type="text" placeholder="Type here the account without @" maxlength="100" class="basic-input"></input>
+			</div>
+			<div class="line">
+				<label>Tweet:</label>
+				<input ng-model="twitter_marketing_data.tweet" id="tweet" type="text" placeholder="Type here your tweet..." maxlength="140"></input>
+			</div>
+
+
+			<button ng-click="start()">Start</button>
+			<!-- <button>Stop</button> -->
+		</div>
+
+		
+	</body>
+</html>
